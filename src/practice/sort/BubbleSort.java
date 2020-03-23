@@ -18,8 +18,8 @@ public class BubbleSort {
 
     private static void bubblesort(int[] unsortedArray) {
         int temp;
-        for (int i = 0; i < unsortedArray.length; i++) {
-            for (int j = 0; j < unsortedArray.length - 1; j++) {
+        for (int i = unsortedArray.length; i > 0; i--) {
+            for (int j = 0; j < i - 1; j++) {
                 if (unsortedArray[j] > unsortedArray[j + 1]) {
                     temp = unsortedArray[j + 1];
                     unsortedArray[j + 1] = unsortedArray[j];
